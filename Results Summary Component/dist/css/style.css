@@ -1,0 +1,301 @@
+*, *::after, *::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+}
+.container_result {
+  width: 100%;
+  height: 357px;
+  text-align: center;
+  padding: 25px 0;
+  border-radius: 0 0 30px 30px;
+  background: linear-gradient(to bottom, hsl(252deg, 100%, 67%) -20%, hsl(241deg, 81%, 54%) 100%);
+}
+.container_result h1 {
+  font-size: 18px;
+  color: hsl(221deg, 100%, 96%);
+  padding-bottom: 25px;
+  font-weight: 500;
+}
+.container_result ._score {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(to bottom, hsl(256deg, 72%, 46%), hsla(241deg, 72%, 46%, 0));
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+.container_result ._score h2 {
+  font-size: 54px;
+  font-weight: 800;
+  color: hsl(0deg, 0%, 100%);
+  margin-top: -5px;
+}
+.container_result ._score span {
+  color: hsl(241deg, 100%, 89%);
+  font-size: 15px;
+}
+.container_result h3 {
+  font-size: 25px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.container_result p {
+  font-size: 16px;
+  width: 70%;
+  max-width: 350px;
+  margin: auto;
+  color: hsl(241deg, 100%, 89%);
+}
+.container_summary {
+  padding: 24px 30px;
+  text-align: left !important;
+}
+.container_summary h4 {
+  font-size: 18px;
+  color: hsl(224deg, 30%, 27%);
+  padding-bottom: 25px;
+}
+.container_summary ._summary-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 21px;
+}
+.container_summary ._summary-box ._summaries {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px;
+  border-radius: 10px;
+}
+.container_summary ._summary-box ._summaries ._stats {
+  display: flex;
+  gap: 10px;
+}
+.container_summary ._summary-box ._summaries ._stats h5 {
+  font-size: 16px;
+}
+.container_summary ._summary-box ._summaries ._grade {
+  color: hsl(241deg, 100%, 89%);
+  font-weight: 700;
+}
+.container_summary ._summary-box ._summaries ._grade .point {
+  color: hsl(224deg, 30%, 27%);
+  padding-right: 5px;
+}
+.container_summary ._summary-box .reaction {
+  background: hsla(0deg, 100%, 67%, 0.06);
+}
+.container_summary ._summary-box .reaction ._stats h5 {
+  color: hsl(0deg, 100%, 67%);
+}
+.container_summary ._summary-box .memory {
+  background: hsla(39deg, 100%, 56%, 0.06);
+}
+.container_summary ._summary-box .memory ._stats h5 {
+  color: hsl(39deg, 100%, 56%);
+}
+.container_summary ._summary-box .verbal {
+  background: hsla(166deg, 100%, 37%, 0.06);
+}
+.container_summary ._summary-box .verbal ._stats h5 {
+  color: hsl(166deg, 100%, 37%);
+}
+.container_summary ._summary-box .visual {
+  background: hsla(234deg, 85%, 45%, 0.06);
+}
+.container_summary ._summary-box .visual ._stats h5 {
+  color: hsl(234deg, 85%, 45%);
+}
+.container_summary_continue {
+  margin-top: 25px;
+  padding: 18px 0;
+  border: none;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 375px;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(224deg, 30%, 27%);
+}
+.container_summary_continue:hover {
+  background: linear-gradient(to bottom, hsl(252deg, 100%, 67%) -20%, hsl(241deg, 81%, 54%) 100%);
+  cursor: pointer;
+}
+.container small {
+  width: 90%;
+  font-size: 15px;
+  height: 50px;
+  margin: auto;
+}
+.container small img {
+  height: 25px;
+}
+.container small a {
+  text-decoration: none;
+  color: hsl(234deg, 85%, 45%);
+}
+.container small a:hover {
+  color: hsl(0deg, 100%, 67%);
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    width: 730px;
+    height: 510px;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    box-shadow: 5px 30px 70px 10px hsl(221deg, 100%, 96%);
+    text-align: center;
+  }
+  .container_result {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0px;
+    align-items: center;
+    border-radius: 30px;
+    padding: 40px 0;
+  }
+  .container_result h1 {
+    font-size: 24px;
+    color: hsl(221deg, 100%, 96%);
+    font-weight: 500;
+  }
+  .container_result ._score {
+    width: 200px;
+    height: 200px;
+  }
+  .container_result ._score h2 {
+    font-size: 70px;
+  }
+  .container_result h3 {
+    font-size: 32px;
+    color: hsl(0deg, 0%, 100%);
+    font-weight: 500;
+    padding-bottom: 5px;
+  }
+  .container_result p {
+    font-size: 18px;
+    width: 70%;
+    max-width: 350px;
+    margin: auto;
+    color: hsl(241deg, 100%, 89%);
+  }
+  .container_summary {
+    padding: 35px;
+    width: 50%;
+    text-align: left !important;
+  }
+  .container_summary h4 {
+    font-size: 25px;
+    color: hsl(224deg, 30%, 27%);
+    padding-bottom: 30px;
+    text-align: left;
+  }
+  .container_summary ._summary-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 18px;
+  }
+  .container_summary ._summary-box ._summaries {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 10px;
+  }
+  .container_summary ._summary-box ._summaries ._stats {
+    display: flex;
+    gap: 10px;
+  }
+  .container_summary ._summary-box ._summaries ._stats h5 {
+    font-size: 18px;
+  }
+  .container_summary ._summary-box ._summaries ._grade {
+    color: hsl(241deg, 100%, 89%);
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .container_summary ._summary-box ._summaries ._grade .point {
+    color: hsl(224deg, 30%, 27%);
+    padding-right: 5px;
+  }
+  .container_summary ._summary-box .reaction {
+    background: hsla(0deg, 100%, 67%, 0.06);
+  }
+  .container_summary ._summary-box .reaction ._stats h5 {
+    color: hsl(0deg, 100%, 67%);
+  }
+  .container_summary ._summary-box .memory {
+    background: hsla(39deg, 100%, 56%, 0.06);
+  }
+  .container_summary ._summary-box .memory ._stats h5 {
+    color: hsl(39deg, 100%, 56%);
+  }
+  .container_summary ._summary-box .verbal {
+    background: hsla(166deg, 100%, 37%, 0.06);
+  }
+  .container_summary ._summary-box .verbal ._stats h5 {
+    color: hsl(166deg, 100%, 37%);
+  }
+  .container_summary ._summary-box .visual {
+    background: hsla(234deg, 85%, 45%, 0.06);
+  }
+  .container_summary ._summary-box .visual ._stats h5 {
+    color: hsl(234deg, 85%, 45%);
+  }
+  .container_summary_continue {
+    margin-top: 45px;
+    padding: 18px 0;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 375px;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(0deg, 0%, 100%);
+    background: hsl(224deg, 30%, 27%);
+  }
+  .container_summary_continue:hover {
+    background: linear-gradient(to bottom, hsl(252deg, 100%, 67%) -20%, hsl(241deg, 81%, 54%) 100%);
+    cursor: pointer;
+  }
+  .container small {
+    font-size: 18px;
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */
