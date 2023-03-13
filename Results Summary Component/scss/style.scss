@@ -163,7 +163,7 @@ body{
             border: none;
             border-radius: 30px;
             width: 100%;
-            max-width: 375px;
+            margin: auto;
             font-size: f.$font-size;
             font-weight: weight(bold);
             color: c.$White;
@@ -179,7 +179,6 @@ body{
         width: 90%;
         font-size: 15px;
         height: 50px;
-       
         margin: auto;
 
         img{
@@ -342,7 +341,6 @@ body{
                 border: none;
                 border-radius: 30px;
                 width: 100%;
-                max-width: 375px;
                 font-size: f.$font-size;
                 font-weight: weight(bold);
                 color: c.$White;
@@ -360,7 +358,6 @@ body{
             bottom: -60px;
             left: 50%;
             transform: translateX(-50%);
-            margin: auto;
             width: 90%;
         }
     }

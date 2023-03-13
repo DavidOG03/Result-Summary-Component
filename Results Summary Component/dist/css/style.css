@@ -133,7 +133,7 @@ body {
   border: none;
   border-radius: 30px;
   width: 100%;
-  max-width: 375px;
+  margin: auto;
   font-size: 18px;
   font-weight: 700;
   color: hsl(0deg, 0%, 100%);
@@ -279,7 +279,6 @@ body {
     border: none;
     border-radius: 30px;
     width: 100%;
-    max-width: 375px;
     font-size: 18px;
     font-weight: 700;
     color: hsl(0deg, 0%, 100%);
@@ -295,7 +294,6 @@ body {
     bottom: -60px;
     left: 50%;
     transform: translateX(-50%);
-    margin: auto;
     width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
